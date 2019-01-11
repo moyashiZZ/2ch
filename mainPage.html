@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>タイトル</title>
+  </head>
+  <body style="background-color: #EEEEEE;">
+    <div class="mainWrapper">
+      <div class="threadWrapper">
+        <h1 id="title" style="color:red;">スレタイ</h1>
+      </div>
+      <!-- 投稿ポストを収納 -->
+      <dl class="thread" style="background-color:">
+        <!-- 投稿NO,名前,日時,IDを収納 -->
+        <dt>
+          <span style="color: black;">投稿NO : </span>
+          <span>
+            <b>名無しさん</b>
+          </span>
+          time
+          id
+        </dt>
+        <!-- 投稿内容を収納 -->
+        <dd>
+          投稿内容
+          <br>
+          投稿内容
+          <br>
+          投稿内容
+        </dd>
+      </dl>
+    </div>
+    <div>
+      <a href="top">掲示板に戻る</a>
+    </div>
+    <form id="postForm"class="" action="index.html" method="post">
+      <input type="submit" name="submit" value="書き込む">
+      <!-- 名前 -->
+      <label>
+        <span>名前: </span>
+        <input type="FROM" size="19">
+      </label>
+      <!-- メール -->
+      <label>
+        <span>
+          E-mail
+          <span style="font-size:xx-small"> (省略可)</span>
+          :
+        </span>
+        <input name="mail" size="19">
+      </label>
+      <br>
+      <textarea name="MESSAGE" rows="5" cols="70"></textarea>
+      <input type="hidden" name="bbs" value="offevent">
+      <input type="hidden" name="key" value="">
+      <input type="hidden" name="time" value="">
+      <br>
+    </form>
+  </body>
+</html>
